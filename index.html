@@ -8,6 +8,8 @@
 <script src="jqtouch/jqtouch.min.js" type="text/javascript" charset="utf-8"></script>
 <link href="jqtouch/jqtouch.min.css" rel="stylesheet" type="text/css">
 <link href="themes/apple/theme.min.css" rel="stylesheet" type="text/css">
+<!-- iOS 3+: dimensions 320x460 -->
+<link rel="apple-touch-startup-image" href="Default.png">
 <script type="text/javascript" charset="utf-8">
             var jQT = new $.jQTouch({
                 icon: 'icon.png',
@@ -70,11 +72,70 @@ pubDate + '<br/>' + desc + '</li>');
    				<li class="arrow"><a class="cube" href="#calendrier-cyclocross">Calendrier cyclo-cross 13/14</a></li>
                 <li class="arrow"><a class="cube" href="#clubs">Les clubs</a></li>
 				<li class="arrow"><a class="cube" href="#magasins">Les magasins partenaires</a></li>
+				<li class="arrow"><a class="cube" href="#contact">Nous contacter</a></li>
    	  </ul>
         <div class="info">
                 <p>&copy; Julien Martel</p>
         </div>
     </div>
+	
+	
+<div id="contact">
+    <div class="toolbar">
+                <h1>Nous contacter</h1>
+                <a href="#" class="back">Retour</a>
+            </div>
+				
+        <ul class="rounded">
+<form action="contact.php" method="post" id="form" data-transition="flow" data-rel="dialog">
+   <h4>Vous d&eacute;sirez nous contacter? Rien de plus simple, il vous suffit de nous envoyer le formulaire ci dessous.</h4><br>
+   <div data-role="fieldcontain">
+      <label for="id_name">Votre nom&nbsp;:</label>
+      <input type="text" name="name" id="id_name" value="" required="required" data-mini="true" />
+   </div><br>
+    <div data-role="fieldcontain">
+	<label for="id_email">Votre e-mail&nbsp;:</label>
+      <input type="text" name="email" id="id_email" value="" required="required" data-mini="true" />
+	</div>
+    <br>
+   <div data-role="fieldcontain">
+      <label for="id_deja_viendu">Vous pratiquez?</label>
+      <select name="deja_viendu" id="id_deja_viendu" data-role="slider" data-mini="true">
+      <option value="Non">Cyclo-cross</option>
+      <option value="Non">Piste</option>
+      <option value="Non">Route</option>
+      <option value="Oui">VTT</option>
+      <option value="Non">Autres</option>
+      </select>
+   </div>
+<br>
+   <div data-role="fieldcontain">
+      <label for="id_commentaire_orga">Votre message</label><br>
+      <textarea name="commentaire_orga" cols="40" rows="6" id="id_commentaire_orga" required="required" data-mini="true"></textarea>
+   </div>
+    <br>
+   <div data-role="fieldcontain">
+      <label for="id_note_nico" class="select">Vous trouvez cette application:</label>
+      <select name="note_nico" id="id_note_nico" required="required" data-native-menu="false" data-mini="true">
+      <option value="">Choisissez une option</option>
+      <option value="Nul">Nul</option>
+      <option value="Moyen">Moyen</option>
+      <option value="Bien">Bien</option>
+      <option value="Très bien">Très bien</option>
+      <option value="Formidable">Formidable</option>
+      </select>
+   </div>
+   <div class="ui-grid-a" id="nogrid_border">
+      <div class="ui-block-a">&nbsp;</div>
+      <div class="ui-block-b"><button type="submit" data-mini="true" data-inline="true" data-theme="d">Envoyer</button></div>
+   </div>
+</form>
+   	  </ul>
+    </div>	
+	
+	
+	
+	
 <div id="calendrier-route">
     <div class="toolbar">
                 <h1>Route</h1>
@@ -1362,7 +1423,7 @@ pubDate + '<br/>' + desc + '</li>');
 				<h1>Bouticycle Cycles P. Beraud Fr&eacute;jus</h1>
 				<h6>
 				Rond point de la Gendarmerie<br>83600 Fr&eacute;jus<br><br>
-				<u>T&eacute;l :</u> <a href="tel:+33494512020">04 94 51 20 20</a>
+				<u>T&eacute;l :</u> <a href="tel:+33494512020" rel="external"/>04 94 51 20 20</a>
 				<br>
 				<u>Marques :</u> Bergamond, Cannondale, GT, Look, Moustache, Time<br><br>
 				<u>Horaires d'ouverture :</u><br>Du lundi au samedi : 9h-12h et 14h-19h
@@ -1378,8 +1439,8 @@ pubDate + '<br/>' + desc + '</li>');
 				<h1>Culture V&eacute;lo Fr&eacute;jus </h1>
 				<h6>
 				ZI l'Intendance - Quartier la Palud<br>83600 Fr&eacute;jus<br><br>
-				<u>T&eacute;l :</u> <a href="tel:+33494537402">04 94 53 74 02</a>
-				<u>Email :</u> <a href="mailto:83frejus@culturevelo.com">83frejus@culturevelo.com</a>
+				<u>T&eacute;l :</u> <a href="tel:+33494537402" rel="external"/>04 94 53 74 02</a>
+				<u>Email :</u> <a href="mailto:83frejus@culturevelo.com" rel="external">83frejus@culturevelo.com</a>
 				<br>
 				<u>Marques :</u> Lapierre, Matra, Scott, Trek<br><br>
 				<u>Horaires d'ouverture :</u><br> Lundi : 14h-19h<br>Du mardi au samedi : 9h-12h et 14h-19h
