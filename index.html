@@ -73,7 +73,7 @@ pubDate + '<br/>' + desc + '</li>');
                 <li class="arrow"><a class="cube" href="#clubs">Les clubs</a></li>
 				<li class="arrow"><a class="cube" href="#magasins">Les magasins partenaires</a></li>
 				<li class="arrow"><a class="cube" href="#contact">Nous contacter</a></li>
-   	  </ul><br><br>
+   	  </ul>
         <div class="info">
                 <p>&copy; Julien Martel</p>
         </div>
@@ -91,11 +91,11 @@ pubDate + '<br/>' + desc + '</li>');
    <h4>Vous d&eacute;sirez nous contacter? Rien de plus simple, il vous suffit de nous envoyer le formulaire ci dessous.</h4><br>
    <div data-role="fieldcontain">
       <label for="id_name">Votre nom&nbsp;:</label>
-      <input type="text" name="name" id="id_name" value="" required data-mini="true" />
+      <input type="text" name="name" id="id_name" value="" required="required" data-mini="true" />
    </div><br>
     <div data-role="fieldcontain">
 	<label for="id_email">Votre e-mail&nbsp;:</label>
-      <input type="text" name="email" id="id_email" value="" required data-mini="true" />
+      <input type="text" name="email" id="id_email" value="" required="required" data-mini="true" />
 	</div>
     <br>
    <div data-role="fieldcontain">
@@ -111,12 +111,12 @@ pubDate + '<br/>' + desc + '</li>');
 <br>
    <div data-role="fieldcontain">
       <label for="id_commentaire_orga">Votre message</label><br>
-      <textarea name="commentaire_orga" cols="40" rows="6" id="id_commentaire_orga" required data-mini="true"></textarea>
+      <textarea name="commentaire_orga" cols="40" rows="6" id="id_commentaire_orga" required="required" data-mini="true"></textarea>
    </div>
     <br>
    <div data-role="fieldcontain">
       <label for="id_note_nico" class="select">Vous trouvez cette application:</label>
-      <select name="note_nico" id="id_note_nico" required data-native-menu="false" data-mini="true">
+      <select name="note_nico" id="id_note_nico" required="required" data-native-menu="false" data-mini="true">
       <option value="">Choisissez une option</option>
       <option value="Nul">Nul</option>
       <option value="Moyen">Moyen</option>
