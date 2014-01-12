@@ -6,10 +6,10 @@
         id = "com.phonegap.hello-world"
         version = "1.0.0">
 
-    <name>Cyclisme Azur&eacute;en</name>
+    <name>Cyclisme Azuréen</name>
 
     <description>
-        Pour tout savoir sur le cyclisme azur&eacute;en.
+        Pour tout savoir sur le cyclisme azuréen.
     </description>
 
     <author href="http://julienmartel.fr" email="marteljulien@neuf.fr">
